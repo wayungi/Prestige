@@ -1,6 +1,11 @@
 class VehiclesController < ApplicationController
   before_action :set_vehicle, only: %i[ show edit update destroy ]
 
+  #GET /vehicles
+  def theme
+    @vehicles = Vehicle.all
+  end
+
   # GET /vehicles or /vehicles.json
   def index
     @vehicles = Vehicle.all
