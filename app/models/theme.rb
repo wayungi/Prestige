@@ -1,4 +1,4 @@
 class Theme < ApplicationRecord
-  belongs_to :users
-  belongs_to :vehicles
+  belongs_to :user
+  belongs_to :vehicle
 end
