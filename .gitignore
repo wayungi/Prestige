@@ -32,3 +32,6 @@
 
 #ignore IDE settings
 .vscode 
+
+#ignore node moduels
+node_modules/
