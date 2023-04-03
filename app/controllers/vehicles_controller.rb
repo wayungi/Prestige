@@ -4,7 +4,8 @@ class VehiclesController < ApplicationController
   # GET /vehicles
   def theme
     @user = User.find(1)
-    @vehicles = @user.themes
+    @vehicles = @user.vehicles
+    # @vehicles = Vehicle.all
   end
 
   # GET /vehicles or /vehicles.json
