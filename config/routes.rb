@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'vehicles#theme'
+  root 'vehicles#index'
   resources :users
   resources :vehicles
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

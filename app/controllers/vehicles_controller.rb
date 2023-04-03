@@ -10,7 +10,8 @@ class VehiclesController < ApplicationController
 
   # GET /vehicles or /vehicles.json
   def index
-    @vehicles = Vehicle.all
+    @user = User.find(1)
+    @vehicles = @user.vehicles #! user $ vehicle are related by has_many_through
   end
 
   # GET /vehicles/1 or /vehicles/1.json
