@@ -3,7 +3,8 @@ class VehiclesController < ApplicationController
 
   # GET /vehicles
   def theme
-    @vehicles = Vehicle.all
+    @user = User.find(1)
+    @vehicles = @user.themes
   end
 
   # GET /vehicles or /vehicles.json

@@ -4,11 +4,8 @@
 
 <div id="vehicles">
   <% @vehicles.each do |vehicle| %>
-    <%= render vehicle %>
     <p>
       <%= link_to "Show this vehicle", vehicle %>
     </p>
   <% end %>
 </div>
-
-<%= link_to "New vehicle", new_vehicle_path %>
