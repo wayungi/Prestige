@@ -7,6 +7,7 @@ class VehiclesController < ApplicationController
     @vehicles = Vehicle.all
   end
 
+  # GET vehicles/theme
   def theme
     @user = User.find(1) #! should change this user on add devise
     @vehicles = @user.vehicles #! join table - has_many_through
@@ -14,6 +15,11 @@ class VehiclesController < ApplicationController
 
   # GET /vehicles/1 or /vehicles/1.json
   def show; end
+
+  #POST
+  def reserve
+    
+  end
 
   # GET /vehicles/new
   def new
