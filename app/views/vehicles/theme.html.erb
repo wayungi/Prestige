@@ -1,12 +1,12 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Vehicles</h1>
-<div id="vehicles">
-  <% @vehicles.each do |vehicle| %>
-    <%= render vehicle %>
-    <p>
-      <%= link_to "Show this vehicle", vehicle %>
-    </p>
-  <% end %>
+<h1>Theme vehicles</h1>
+<div>
+    <%= render "partials/nav" %>
 </div>
 
+<div id="vehicles">
+  <% @vehicles.each do |vehicle| %>
+    <%= render partial: "vehicles/theme", locals: { vehicle: vehicle } %> 
+  <% end %>
+</div>

@@ -1,21 +1,23 @@
 class VehiclesController < ApplicationController
   before_action :set_vehicle, only: %i[show edit update destroy]
 
-  # GET /vehicles
-  # browser route: http://127.0.0.1:3000/users/1/vehicles/theme
-  def theme
-    @user = User.find(1) #! should change this user on add devise
-    @vehicles = @user.vehicles
-  end
-
   # GET /vehicles or /vehicles.json
   def index
-    @user = User.find(1) #! should change this user on add devise
-    @vehicles = @user.vehicles #! user $ vehicle are related by has_many_through
+    # @user = User.find(1) #! should change this user on add devise
+    @vehicles = Vehicle.all
+  end
+
+  # GET vehicles/theme
+  def theme
+    @user = User.find(1) # ! should change this user on add devise
+    @vehicles = @user.vehicles # ! join table - has_many_through
   end
 
   # GET /vehicles/1 or /vehicles/1.json
   def show; end
+
+  # POST
+  def reserve; end
 
   # GET /vehicles/new
   def new

@@ -1,10 +1,50 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @vehicle %>
-
 <div>
-  <%= link_to "Edit this vehicle", edit_vehicle_path(@vehicle) %> |
-  <%= link_to "Back to vehicles", vehicles_path %>
+  <div>
+      <%= render "partials/nav" %>
+  </div>
 
-  <%= button_to "Destroy this vehicle", @vehicle, method: :delete %>
+  <div>
+    <%= image_tag @vehicle.image, class: 'vehicle-image', alt: 'My Image' %> 
+  </div>
+
+  <div>
+    <p>
+    <%= @vehicle.name%></br>
+    <%= @vehicle.desc %>
+    </p>
+    <p>
+    <span>drive fee</span>
+    <%= @vehicle.drive_fee%>
+    </p>
+
+    <p>
+      <span>Purchase fee</span>
+      <%= @vehicle.purchase_fee %>
+    </p>
+
+    <p>
+    <span>Initial deposit</span>
+    <%= 0.2*@vehicle.purchase_fee %>
+    </p>
+
+    <p>
+    <span>Monthly installments</span>
+    <%= 0.05*@vehicle.purchase_fee %>
+    </p>
+
+    <p>
+      <span>Duration</span>
+      <span><%= (@vehicle.purchase_fee - 0.2*@vehicle.purchase_fee)/(0.05*@vehicle.purchase_fee) %> months<span>
+    </p>
+  </div>
+
+
+  <div>
+    <%= link_to "Reserve" %>
+    <%= link_to "Edit this vehicle", edit_vehicle_path(@vehicle) %> |
+    <%= link_to "Back to vehicles", vehicles_path %>
+    <%= button_to "Destroy this vehicle", @vehicle, method: :delete %>
+  </div>
 </div>

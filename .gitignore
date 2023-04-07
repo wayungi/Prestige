@@ -35,3 +35,6 @@
 
 #ignore node moduels
 node_modules/
+
+#ignore dox
+dox.txt
