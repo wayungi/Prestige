@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'vehicles#index'
+  get 'vehicles/theme', to: 'vehicles#theme'
   resources :users
   resources :vehicles
 

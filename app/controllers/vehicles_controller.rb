@@ -3,8 +3,13 @@ class VehiclesController < ApplicationController
 
   # GET /vehicles or /vehicles.json
   def index
+    # @user = User.find(1) #! should change this user on add devise
+    @vehicles = Vehicle.all
+  end
+
+  def theme
     @user = User.find(1) #! should change this user on add devise
-    @vehicles = @user.vehicles #! user $ vehicle are related by has_many_through
+    @vehicles = @user.vehicles #! join table - has_many_through
   end
 
   # GET /vehicles/1 or /vehicles/1.json
