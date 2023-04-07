@@ -1,14 +1,24 @@
-<p style="color: green"><%= notice %></p>
+<div id="<%= dom_id vehicle %>">
+  <%= link_to "Show this vehicle", vehicle %>
 
-<h1>Vehicles</h1>
-<div>
-  <%= render "partials/nav" %>
+  <p>
+    <strong>Name:</strong>
+    <%= vehicle.name %>
+  </p>
+
+  <p>
+    <strong>Image:</strong>
+    <%= vehicle.image %>
+  </p>
+
+  <p>
+    <strong>Drive fee:</strong>
+    <%= vehicle.drive_fee %>
+  </p>
+
+  <p>
+    <strong>Purchase fee:</strong>
+    <%= vehicle.purchase_fee %>
+  </p>
+
 </div>
-
-<div id="vehicles">
-  <% @vehicles.each do |vehicle| %>
-    <%= render vehicle %>
-    <%= render "vehicles/theme" %>
-  <% end %>
-</div>
-
