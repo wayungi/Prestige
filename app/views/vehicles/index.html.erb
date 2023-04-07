@@ -4,13 +4,11 @@
 <div>
   <%= render "partials/nav" %>
 </div>
+
 <div id="vehicles">
   <% @vehicles.each do |vehicle| %>
     <%= render vehicle %>
-    <p>
-      <%= link_to "Show this vehicle", vehicle %>
-    </p>
+    <%= render "vehicles/theme" %>
   <% end %>
 </div>
 
-<%= link_to "New vehicle", new_vehicle_path %>
