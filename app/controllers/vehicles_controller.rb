@@ -16,8 +16,10 @@ class VehiclesController < ApplicationController
   # GET /vehicles/1 or /vehicles/1.json
   def show; end
 
-  # POST
-  def reserve; end
+  # GET vehicles/1/reserve/
+  def reserve
+    puts @vehicle
+  end
 
   # GET /vehicles/new
   def new
