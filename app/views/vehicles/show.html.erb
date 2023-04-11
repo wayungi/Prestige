@@ -42,9 +42,14 @@
 
 
   <div>
-    <%= link_to "Reserve" %>
     <%= link_to "Edit this vehicle", edit_vehicle_path(@vehicle) %> |
     <%= link_to "Back to vehicles", vehicles_path %>
     <%= button_to "Destroy this vehicle", @vehicle, method: :delete %>
+
+    <div>
+      <%= form_tag custom_action_path, method: :post do %>
+        <%= submit_tag 'Reserve' %>
+      <% end %>
+    </div>
   </div>
 </div>

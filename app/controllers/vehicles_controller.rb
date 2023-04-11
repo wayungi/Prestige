@@ -17,7 +17,9 @@ class VehiclesController < ApplicationController
   def show; end
 
   # POST
-  def reserve; end
+  def reserve
+    puts "Reserving"
+  end
 
   # GET /vehicles/new
   def new
