@@ -1,5 +1,5 @@
 class VehiclesController < ApplicationController
-  before_action :set_vehicle, only: %i[show edit update destroy]
+  before_action :set_vehicle, only: %i[show edit update destroy reserve]
 
   # GET /vehicles or /vehicles.json
   def index
