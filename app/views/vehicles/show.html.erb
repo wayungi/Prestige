@@ -47,9 +47,9 @@
     <%= button_to "Destroy this vehicle", @vehicle, method: :delete %>
 
     <div>
-      <%= form_tag vehicles_reserve_path, method: :post do %>
+      <%= form_tag reserve_vehicle_path(@vehicle), method: :post do %>
         <%= submit_tag 'Reserve' %>
       <% end %>
-    </div>
+    </div> 
   </div>
 </div>

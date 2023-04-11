@@ -1,5 +1,5 @@
 class VehiclesController < ApplicationController
-  before_action :set_vehicle, only: %i[show edit update destroy reserve]
+  before_action :set_vehicle, only: %i[show edit update destroy]
 
   # GET /vehicles or /vehicles.json
   def index
@@ -16,9 +16,9 @@ class VehiclesController < ApplicationController
   # GET /vehicles/1 or /vehicles/1.json
   def show; end
 
-  # POST
+  # GET vehicles/1/reserve/
   def reserve
-    puts "Reserving"
+    puts @vehicle
   end
 
   # GET /vehicles/new
