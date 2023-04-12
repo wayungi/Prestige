@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   resources :users
   resources :vehicles do
-    post 'reserve', on: :member
+    post 'reserve', on: :member #creates a custom => route vehicles/11/reserve
   end
 
 
