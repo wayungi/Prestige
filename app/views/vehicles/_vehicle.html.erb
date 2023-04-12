@@ -1,0 +1,29 @@
+<div id="<%= dom_id vehicle %>">
+  <%# <%= link_to "Show this vehicle", vehicle %>
+
+<%# show vehicle image %>
+  <div>
+    <p>
+      <strong>Image:</strong>
+      <%= image_tag vehicle.image, class: 'vehicle-image', alt: 'My Image' %> 
+    </p>
+  </div>
+
+
+<div>
+  <p>
+    <strong>Name:</strong>
+    <%=image_tag vehicle.name %>
+  </p>
+  <p>
+    <strong>Drive fee:</strong>
+    <%= vehicle.drive_fee %>
+  </p>
+
+  <p>
+    <strong>Purchase fee:</strong>
+    <%= vehicle.purchase_fee %>
+  </p>
+</div>  
+
+</div>
