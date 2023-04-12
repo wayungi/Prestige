@@ -18,7 +18,7 @@ class VehiclesController < ApplicationController
   # GET vehicles/1/reserve/
   def reserve
     @vehicle = Vehicle.find(params[:id])
-    @user = User.find(1) #! change this to get the current user
+    @user = User.find(1) # ! change this to get the current user
     Theme.create(user_id: @user.id, vehicle_id: @vehicle.id, book_date: Date.today, name: @vehicle.name)
   end
 
