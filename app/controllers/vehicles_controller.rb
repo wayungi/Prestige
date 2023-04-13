@@ -22,9 +22,9 @@ class VehiclesController < ApplicationController
     Theme.create(user_id: @user.id, vehicle_id: @vehicle.id, book_date: Date.today, name: @vehicle.name)
   end
 
-  #GET /vehicles/reserve/form
+  # GET /vehicles/reserve/form
   def reserve_form
-    @user = User.find(1) #! this will need to be deleted and user added dynamically
+    @user = User.find(1) # ! this will need to be deleted and user added dynamically
   end
 
   # GET /vehicles/delete/candidates
