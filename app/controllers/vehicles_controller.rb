@@ -22,7 +22,7 @@ class VehiclesController < ApplicationController
     Theme.create(user_id: @user.id, vehicle_id: @vehicle.id, book_date: Date.today, name: @vehicle.name)
   end
 
-  # GET /vehicles/candidates
+  # GET /vehicles/delete/candidates
   def candidates
     @vehicles = Vehicle.all;
   end
