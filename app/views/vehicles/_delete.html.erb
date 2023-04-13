@@ -1,0 +1,16 @@
+  <div id="<%= dom_id vehicle %>">
+    <div>
+      <% if vehicle.image.present? %>
+        <%= image_tag vehicle.image, class: 'vehicle-image', alt: 'My Image' %> 
+      <% end %>
+    </div>
+    <p>
+      <%= vehicle.name %>
+    </p>
+    <p>
+      <%= vehicle.desc %>
+    <p>
+    <p>
+        <%= button_to "Destroy", vehicle, method: :delete %>
+    </p>
+  </div>
