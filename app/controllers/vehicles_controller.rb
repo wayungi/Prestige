@@ -22,8 +22,8 @@ class VehiclesController < ApplicationController
     Theme.create(user_id: @user.id, vehicle_id: @vehicle.id, book_date: Date.today, name: @vehicle.name)
   end
 
-  # GET /vehicles/fordeletion
-  def fordeletion
+  # GET /vehicles/delete
+  def delete
     @vehicles = Vehicle.all;
   end
 
