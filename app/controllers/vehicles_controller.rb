@@ -1,5 +1,5 @@
 class VehiclesController < ApplicationController
-  before_action :set_vehicle, only: %i[show edit update destroy]
+  before_action :set_vehicle, only: %i[show edit update destroy, reserve_form]
 
   # GET /vehicles or /vehicles.json
   def index
@@ -21,6 +21,9 @@ class VehiclesController < ApplicationController
     @user = User.find(1) # ! change this to get the current user
     Theme.create(user_id: @user.id, vehicle_id: @vehicle.id, book_date: Date.today, name: @vehicle.name)
   end
+
+  #GET /vehicles/reserve/form
+  def reserve_form; end
 
   # GET /vehicles/delete/candidates
   def candidates
