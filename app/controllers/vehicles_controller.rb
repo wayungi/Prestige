@@ -24,7 +24,7 @@ class VehiclesController < ApplicationController
 
   # GET /vehicles/delete/candidates
   def candidates
-    @vehicles = Vehicle.all;
+    @vehicles = Vehicle.all
   end
 
   # GET /vehicles/new
