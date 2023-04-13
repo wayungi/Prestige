@@ -1,0 +1,14 @@
+<%= form_with do |form| %>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.select :city, options_for_select([['Kampala', 'KLA'], ['Lira', 'LR']]), { prompt: "Please select a city" }, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.date_field :date, class: "form-control", value: Date.today, placeholder: "Choose a date", min: Date.today, max: Date.today + 1.year %> 
+  </div>
+
+  <%= form.submit "Reserve" %>
+<% end %>
