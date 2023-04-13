@@ -6,8 +6,10 @@ Rails.application.routes.draw do
   resources :users
   resources :vehicles do
     post 'reserve', on: :member #creates a custom => route vehicles/11/reserve
+    get 'reserve_form', on: :member #creates a custom => route vehicles/11/reserve_form
   end
   get 'vehicles/delete/candidates', to: 'vehicles#candidates'
+
 
 
 
