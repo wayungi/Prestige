@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Reserve vehicle</h1>
+<div>
+    <%= render "partials/nav" %>
+</div>
+
+<div id="vehicles">
+  <%= render partial: "vehicles/reserve", locals: { user: @user } %> 
+</div>
