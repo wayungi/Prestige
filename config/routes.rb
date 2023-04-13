@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   resources :vehicles do
     post 'reserve', on: :member #creates a custom => route vehicles/11/reserve
   end
+  get 'vehicles/delete/candidates', to: 'vehicles#candidates'
+
 
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

@@ -15,11 +15,16 @@ class VehiclesController < ApplicationController
   # GET /vehicles/1 or /vehicles/1.json
   def show; end
 
-  # GET vehicles/1/reserve/
+  # POST vehicles/1/reserve/
   def reserve
     @vehicle = Vehicle.find(params[:id])
     @user = User.find(1) # ! change this to get the current user
     Theme.create(user_id: @user.id, vehicle_id: @vehicle.id, book_date: Date.today, name: @vehicle.name)
+  end
+
+  # GET /vehicles/delete/candidates
+  def candidates
+    @vehicles = Vehicle.all
   end
 
   # GET /vehicles/new
