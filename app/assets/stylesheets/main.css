@@ -11,6 +11,6 @@ nav, main {
 
 main {
     display: grid;
-    grid-template-columns: [line-1] 1fr [line-2] 6fr [line-3] 2fr [line-4];
-    grid-template-rows: [row-1] 10vh [row-2];
+    grid-template-columns: [col] 1fr [col] 6fr [col] 2fr [col];
+    grid-template-rows: [ro] 10vh [ro];
 }
