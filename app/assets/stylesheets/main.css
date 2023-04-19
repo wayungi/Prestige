@@ -53,6 +53,14 @@ nav ul {
   margin: 40px 0 20px 0;
 }
 
+.vehicles > div {
+  display:flex;
+  outline:1px solid green;
+  width: 90%;
+  gap:10px;
+  overflow-y: scroll;
+}
+
 
 main {
   display: grid;

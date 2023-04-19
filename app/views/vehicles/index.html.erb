@@ -9,9 +9,7 @@
     <h1>Latest models</h1>
     <div>
       <% @vehicles.each do |vehicle| %>
-        <article>
           <%= render partial: "vehicles/theme", locals: { vehicle: vehicle } %>
-        <article> 
       <% end %>
     </div>
   </div>
