@@ -9,34 +9,34 @@
 
 .notice {
   grid-area: header;
-} 
+}
 
 nav {
   grid-area: navigation;
   display: flex;
-  flex-direction:column
+  flex-direction: column;
 }
 
 nav a {
-  text-decoration:none;
-  color:black;
-  font-weight: bold;
+  text-decoration: none;
+  color: black;
   display: block;
   padding: 10px 0;
-  font-weight: 200px;
-
+  font-weight: 200;
 }
 
-nav ul li a:hover{
-  background-color: grey ;
-  color:white;
+nav ul li a:hover {
+  background-color: grey;
+  color: white;
 }
 
-.vehicle-link, .vehicles h1, nav ul li {
+.vehicle-link,
+.vehicles h1,
+nav ul li {
   font-family: 'Poppins', sans-serif;
 }
 
-nav ul li{
+nav ul li {
   border-bottom: 1px solid grey;
   text-align: center;
 }
@@ -50,19 +50,19 @@ nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-left:1px solid #ccc;
-  height:100vh;
+  border-left: 1px solid #ccc;
+  height: 100vh;
 }
 
 .vehicles h1 {
   margin: 40px 0 20px 0;
-  font-weight: 500px;
+  font-weight: 500;
 }
 
 .vehicles > div {
-  display:flex;
+  display: flex;
   width: 90%;
-  gap:10px;
+  gap: 10px;
   overflow-y: scroll;
 }
 
@@ -70,13 +70,12 @@ div .vehicle-detail {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color:black;
+  color: black;
 }
 
 .vehicle-link {
   text-decoration: none;
 }
-
 
 main {
   display: grid;
@@ -84,8 +83,5 @@ main {
   grid-template-rows: auto;
   grid-template-areas:
     "header header header"
-    "nav vehicles vehicles"
-  ;
+    "nav vehicles vehicles";
 }
-
-
