@@ -6,9 +6,14 @@
   </div>
 
   <div class="vehicles">
-    <% @vehicles.each do |vehicle| %>
-      <%= render partial: "vehicles/theme", locals: { vehicle: vehicle } %> 
-    <% end %>
+    <h1>Latest models</h1>
+    <div>
+      <% @vehicles.each do |vehicle| %>
+        <article>
+          <%= render partial: "vehicles/theme", locals: { vehicle: vehicle } %>
+        <article> 
+      <% end %>
+    </div>
   </div>
-  
+
 </main>
