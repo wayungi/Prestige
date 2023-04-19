@@ -1,15 +1,15 @@
 <article>
-  <%= link_to vehicle do %>
+  <%= link_to vehicle, class: "vehicle-link"  do %>
     <div id="<%= dom_id vehicle %>">
       <div>
         <%= image_tag(vehicle.image, class: 'vehicle-image', alt: 'My Image') %> 
       </div>
-      <p>
-        <%= vehicle.name %>
-      </p>
-      <p>
-        <%= vehicle.desc %>
-      <p>
+      <div class="vehicle-detail">
+        <p><%= vehicle.name %></p>
+        <p><%= vehicle.desc %><p>
+        <p>Test Fee: <%= vehicle.drive_fee %><p>
+        <p>Price: <%= vehicle.purchase_fee %><p>
+      </div>
     </div>
   <% end %>
 </article>
