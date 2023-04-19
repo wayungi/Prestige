@@ -9,7 +9,6 @@
 
 .notice {
   grid-area: header;
-  border:1px solid blue;
 } 
 
 nav {
@@ -44,7 +43,14 @@ nav ul {
 
 .vehicles {
   grid-area: vehicles;
-  border:1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left:1px solid #ccc;
+}
+
+.vehicles h1 {
+  margin: 40px 0 20px 0;
 }
 
 
