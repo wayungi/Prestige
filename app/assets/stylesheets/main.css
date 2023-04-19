@@ -18,15 +18,21 @@ nav {
   flex-direction:column
 }
 
-nav ul li a{
+nav a {
   text-decoration:none;
   color:black;
   font-weight: bold;
+  display: block;
+  padding: 10px 0;
+}
+
+nav ul li a:hover{
+  background-color: grey ;
+  color:white;
 }
 
 nav ul li{
   border-bottom: 1px solid grey;
-  padding: 10px 0;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-size: 200;
