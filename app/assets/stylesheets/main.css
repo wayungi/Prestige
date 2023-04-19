@@ -7,11 +7,32 @@
 
 nav,
 main {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
+
+.notice {
+  grid-area: header;
+  border:1px solid blue;
+} 
+
+nav {
+  grid-area: navigation;
+}
+
+.vehicles {
+  grid-area: vehicles;
+  border:1px solid red;
+}
+
 
 main {
   display: grid;
-  grid-template-columns: [col] 1fr [col] 6fr [col] 2fr [col];
-  grid-template-rows: [ro] 10vh [ro];
+  grid-template-columns: 1fr 6fr 2fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header"
+    "nav vehicles vehicles"
+  ;
 }
+
+
