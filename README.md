@@ -123,7 +123,7 @@ You can deploy this project using: <a href="https://www.youtube.com/watch?v=QJ4B
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Author1**
+👤 **Francis Wayungi**
 
 - GitHub: [@githubhandle](https://github.com/wayungi)
 - Twitter: [@twitterhandle](https://twitter.com/FrancisWayungi)
