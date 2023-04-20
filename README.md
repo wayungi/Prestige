@@ -95,65 +95,27 @@ In order to run this project you need:
 
 ### Setup
 
-Clone this repository to your desired folder:
+Clone this repository to your desired folder by running theis command on the terminal:  `git clone git@github.com:wayungi/Prestige.git`
 
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
 
 ### Install
 
-Install this project with:
+Install this project with: `bundle install`
 
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project, execute the following command: `rails server`
 
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
 
 ### Run tests
 
-To run tests, run the following command:
+To run tests, run the following command: `rails test`
 
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
 
 ### Deployment
 
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
+You can deploy this project using: Follow <a href="https://www.youtube.com/watch?v=QJ4BcTQlKC0&t=406s">this tutorial</a> on how to deploy a rails project on render
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
