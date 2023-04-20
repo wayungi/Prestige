@@ -115,7 +115,7 @@ To run tests, run the following command: `rails test`
 
 ### Deployment
 
-You can deploy this project using: Follow <a href="https://www.youtube.com/watch?v=QJ4BcTQlKC0&t=406s">this tutorial</a> on how to deploy a rails project on render
+You can deploy this project using: <a href="https://www.youtube.com/watch?v=QJ4BcTQlKC0&t=406s">This tutorial</a> on how to deploy a rails project on render
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -123,19 +123,12 @@ You can deploy this project using: Follow <a href="https://www.youtube.com/watch
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/wayungi)
+- Twitter: [@twitterhandle](https://twitter.com/FrancisWayungi)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/francis-wayungi)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
