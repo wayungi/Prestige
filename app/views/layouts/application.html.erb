@@ -8,7 +8,6 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-
     <%# my cdn for tinyslider, font-awesome & styles %>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.3.11/tiny-slider.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.3.11/min/tiny-slider.js"></script>
@@ -18,4 +17,5 @@
   <body>
     <%= yield %>
   </body>
+      <%= javascript_include_tag 'slider' %>
 </html>

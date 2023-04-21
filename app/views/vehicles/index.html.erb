@@ -5,9 +5,18 @@
       <%= render "partials/nav" %>
   </div>
 
-  <div class="vehicles">
-    <h1>Latest models</h1>
-    <div>
+  <div class="vehicles slider-container">
+    <%# <h1>Latest models</h1> %>
+    <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
+      <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+          <i class="fas fa-angle-left fa-5x"></i>
+      </li>
+      <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+          <i class="fas fa-angle-right fa-5x"></i>          
+      </li>
+    </ul>
+
+    <div class="my-slider">
       <% @vehicles.each do |vehicle| %>
           <%= render partial: "vehicles/theme", locals: { vehicle: vehicle } %>
       <% end %>
