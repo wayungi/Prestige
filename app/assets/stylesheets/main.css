@@ -38,6 +38,15 @@ nav {
   flex-direction: column;
 }
 
+nav ul {
+  margin-top: 40px;
+}
+
+nav li {
+  border-bottom: 1px solid grey;
+  text-align: center;
+}
+
 nav a {
   text-decoration: none;
   color: black;
@@ -46,7 +55,7 @@ nav a {
   font-weight: 200;
 }
 
-nav ul li a:hover {
+nav a:hover {
   background-color: grey;
   color: white;
 }
@@ -54,14 +63,7 @@ nav ul li a:hover {
 /* == The image display section == */
 
 
-nav ul li {
-  border-bottom: 1px solid grey;
-  text-align: center;
-}
 
-nav ul {
-  margin-top: 40px;
-}
 
 .vehicles {
   grid-area: vehicles;
