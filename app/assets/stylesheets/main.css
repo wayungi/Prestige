@@ -5,8 +5,10 @@
   padding: 0;
   border: none;
   background: none;
+  font-family: 'Poppins', sans-serif;
 }
 
+/* partion the grid */
 .notice {
   grid-area: notice;
 }
@@ -28,17 +30,12 @@
     "navigation vehicles";
 };
 
+/*** styling from left to right & top to bottom ***/
 
-header {
-  grid-area: header;
-};
-
+/* == The navigation == */
 nav {
-  grid-area: navigation;
   display: flex;
   flex-direction: column;
-  /* ===temp styles */
-  outline:1px solid green;
 }
 
 nav a {
@@ -54,11 +51,8 @@ nav ul li a:hover {
   color: white;
 }
 
-.vehicle-link,
-.vehicles h1,
-nav ul li {
-  font-family: 'Poppins', sans-serif;
-}
+/* == The image display section == */
+
 
 nav ul li {
   border-bottom: 1px solid grey;
