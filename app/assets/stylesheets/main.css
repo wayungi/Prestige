@@ -8,13 +8,37 @@
 }
 
 .notice {
-  grid-area: header;
+  grid-area: notice;
 }
+
+.menu {
+  grid-area: navigation;
+}
+
+.content {
+  grid-area: vehicles;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "notice notice"
+    "navigation vehicles";
+};
+
+
+header {
+  grid-area: header;
+};
 
 nav {
   grid-area: navigation;
   display: flex;
   flex-direction: column;
+  /* ===temp styles */
+  outline:1px solid green;
 }
 
 nav a {
@@ -48,11 +72,19 @@ nav ul {
 .vehicles {
   grid-area: vehicles;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-left: 1px solid #ccc;
-  height: 100vh;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* border-left: 1px solid #ccc; */
+  /* height: 100vh; */
+
+  /* === */
+  outline: 4px solid red;
+  margin-right:5px;
 }
+
+/* ul#customize-controls{
+  display: flex;
+} */
 
 .vehicles h1 {
   margin: 40px 0 20px 0;
@@ -66,22 +98,53 @@ nav ul {
   overflow-y: scroll;
 }
 
-div .vehicle-detail {
+
+/* === image carousel === */
+
+div#carousel {
+  border:1px solid black;
+  width:80%;
+  overflow-y: hidden;
+}
+
+/* ==== slider-item styles ==== */
+
+/* article.slider-item {
+  outline: 1px solid green;
+  width:20%;
+} */
+
+/* .vehicle-link {
+  text-decoration: none;
+  display: inline;
+} */
+
+/* .card {
+  outline: 2px solid yellow;
+  width:20%;
+} */
+
+/* .mark, .vehicle-detail {
+  outline: 1px solid blue;
+  width:fit-content;
+} */
+
+/* div .vehicle-detail {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: black;
-}
+} */
 
-.vehicle-link {
-  text-decoration: none;
-}
+/* =======slider styles end ======= */
 
-main {
-  display: grid;
-  grid-template-columns: 2fr 6fr 2fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header header header"
-    "nav vehicles vehicles";
-}
+
+
+
+
+
+
+
+
+/* temporarly styles */
+

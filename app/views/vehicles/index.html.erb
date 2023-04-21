@@ -1,11 +1,13 @@
-<main>
-  <p class="notice"><%= notice %></p>
-
-  <div>
+<main class="wrapper">
+  <p class="notice">
+  <%#! <%= notice %> 
+  HEADER MARKER TEXT
+  </p>
+  <section class="menu">
       <%= render "partials/nav" %>
-  </div>
+  </section>
 
-  <div class="vehicles slider-container">
+  <section class="content slider-container">
     <%# <h1>Latest models</h1> %>
     <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
       <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
@@ -15,12 +17,11 @@
           <i class="fas fa-angle-right fa-5x"></i>          
       </li>
     </ul>
-
-    <div class="my-slider">
+    <%# the image carousel %>
+    <div class="my-slider" id="carousel">
       <% @vehicles.each do |vehicle| %>
-          <%= render partial: "vehicles/theme", locals: { vehicle: vehicle } %>
+        <%= render partial: "vehicles/theme", locals: { vehicle: vehicle } %>
       <% end %>
     </div>
-  </div>
-
-</main>
+  </section>
+</div>
