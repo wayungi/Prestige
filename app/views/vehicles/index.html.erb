@@ -7,12 +7,13 @@
       <%= render "partials/nav" %>
   </section>
 
-  <section class="content slider-container">
+  <section class="content">
     <h1>Latest models</h1>
-      <article>
+    <%# The area in which the car cards are dispaying %>
+      <div> 
         <% @vehicles.each do |vehicle| %>
           <%= render partial: "vehicles/theme", locals: { vehicle: vehicle } %>
         <% end %>
-      </article>
+      </div>
   </section>
-</div>
+</main>
