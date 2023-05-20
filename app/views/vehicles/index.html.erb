@@ -9,11 +9,15 @@
 
   <section class="content">
     <h1>Latest models</h1>
-    <%# The area in which the car cards are dispaying %>
-      <div> 
+    <div class="swiper"><!-- Slider main container -->
+      <div class="swiper-wrapper"><!-- Additional required wrapper -->
         <% @vehicles.each do |vehicle| %>
-          <%= render partial: "vehicles/theme", locals: { vehicle: vehicle } %>
+          <%= render partial: "vehicles/theme", locals: { vehicle: vehicle } %><!-- Slides -->
         <% end %>
       </div>
+      <!-- navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
   </section>
 </main>

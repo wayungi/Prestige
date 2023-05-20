@@ -92,14 +92,18 @@ nav a:hover {
   outline: 4px solid red;
 }
 
-.content > div {
+.content > div.swiper {
   display:flex;
   gap:0 20px;
   outline:4px solid blue;
   padding: 0 20px;
+  width: 800px;
+  height: 300px;
 }
 
-.content > div article {
+
+
+.content article.swiper-slide {
   outline:1px solid blue;
   /* margin:20px; */
 }
