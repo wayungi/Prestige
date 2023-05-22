@@ -8,19 +8,46 @@
   font-family: 'Poppins', sans-serif;
 }
 
+main.wrapper {
+  display: grid;
+  grid-template: 50px auto / repeat(12, 1fr);
+  height:100vh;
+}
 
-.wrapper {
+p.notice {
+  grid-column: 1 / -1;
+  outline:5px solid rgb(230, 9, 9);
+
+}
+
+section.content-wrapper {
+  grid-column: 1 / -1;
+  outline:5px solid black;
+}
+
+main > section {
+  display:flex;
+  width:100vw;
+  height:100%;
+}
+
+/* main > section {
+  display:flex;
+} */
+
+/* .wrapper {
   display: grid;
   grid-template-columns: 250px 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    "notice notice"
-    "navigation vehicles";
- border: 4px solid green;
-};
+    "notice"
+    "navigation";
+  /* outline: 1px solid green; 
+  
+}; */
 
 /* partion the grid */
-.notice {
+/* .notice {
   grid-area: notice;
 }
 
@@ -32,11 +59,7 @@
   grid-area: vehicles;
 }
 
-/* ====== */
-.vehicle-detail, .mark {
-  border:2px solid blueviolet;
-  width:fit-content
-}
+ */
 
 /* .card {
   border:2px solid blue;
