@@ -25,20 +25,10 @@ section.menu {
 section.content {
   grid-column: 3 / -1;
   border-left: 1px solid #ccc;
-
+  display: flex;
+  align-items: center;
+  padding: 0  20px;
 }
-
-
-
-/* main > section {
-  display:flex;
-  width:100vw;
-  height:100%;
-} */
-
-
-
-
 
 /* == The navigation == */
 nav {
@@ -70,33 +60,15 @@ nav a:hover {
 
 /* == The image display section == */
 
-.content {
-  display: flex;
-  flex-direction:column;
-  /* outline: 4px solid red; */
-}
-
 .content > div.swiper {
   display:flex;
-  gap:0 20px;
-  outline:4px solid blue;
-  padding: 0 20px;
-  width: 800px;
-  height: 300px;
+  width: 100%;
+  height: 80%;
 }
 
-
-
-.content article.swiper-slide {
-  outline:1px solid blue;
-  /* margin:20px; */
+.swiper-slide {
+  outline: 1px solid blue;
 }
-
-
-
-
-
-
 
 #customize-controls {
   display: flex;
@@ -113,6 +85,13 @@ nav a:hover {
   gap: 10px;
   overflow-y: scroll;
 }
+
+.swiper-slide .vehicle-link {
+  text-decoration: none;
+  color:black;
+}
+
+
 
 
 

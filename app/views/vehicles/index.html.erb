@@ -1,24 +1,21 @@
 <main class="wrapper">
   <div class="notice">
-    <%# !<%= notice %> 
-      <h1>Latest models</h1>
+    <%= notice %> 
+    <h1>Latest models</h1>
   </div>
-
-
-    <section class="menu">
-        <%= render "partials/nav" %>
-    </section> 
-
-    <section class="content">
-      <div class="swiper"><!-- Slider main container -->
-        <div class="swiper-wrapper"><!-- Additional required wrapper -->
-          <% @vehicles.each do |vehicle| %>
-            <%= render partial: "vehicles/theme", locals: { vehicle: vehicle } %><!-- Slides --> 
-          <% end %>
-        </div> 
-        <!-- navigation buttons -->
-        <div class="swiper-button-prev"></div> 
-        <div class="swiper-button-next"></div>
-      </div>
-    </section>
+  <section class="menu">
+      <%= render "partials/nav" %>
+  </section> 
+  <section class="content">
+    <div class="swiper"><!-- Slider main container -->
+      <div class="swiper-wrapper"><!-- Additional required wrapper -->
+        <% @vehicles.each do |vehicle| %>
+          <%= render partial: "vehicles/theme", locals: { vehicle: vehicle } %><!-- Slides --> 
+        <% end %>
+      </div> 
+      <!-- navigation buttons -->
+      <div class="swiper-button-prev"></div> 
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
 </main>
