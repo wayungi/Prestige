@@ -10,17 +10,25 @@
 
 main.wrapper {
   display: grid;
-  grid-template: 50px auto / repeat(12, 1fr);
+  grid-template: 80px auto / repeat(12, 1fr);
   height:100vh;
 }
 
 div.notice {
   grid-column: 1 / -1;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notice h1 {
+
 }
 
 section.menu {
   grid-column: 1 / span 2;
 }
+
 
 section.content {
   grid-column: 3 / -1;
