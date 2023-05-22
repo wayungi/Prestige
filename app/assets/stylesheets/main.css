@@ -11,24 +11,19 @@
 main.wrapper {
   display: grid;
   grid-template: 80px auto / repeat(12, 1fr);
-  height:100vh;
+  height: 100vh;
 }
 
 div.notice {
   grid-column: 1 / -1;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.notice h1 {
-
 }
 
 section.menu {
   grid-column: 1 / span 2;
 }
-
 
 section.content {
   grid-column: 3 / -1;
@@ -69,19 +64,19 @@ nav a:hover {
 /* == The image display section == */
 
 .content > div.swiper {
-  display:flex;
+  display: flex;
   width: 100%;
   height: 80%;
 }
 
 .swiper-slide .vehicle-link {
-  display:flex;
+  display: flex;
   justify-content: center;
   text-decoration: none;
-  color:black;
+  color: black;
 }
 
-.vehicle-link .vehicle-detail{
+.vehicle-link .vehicle-detail {
   text-align: center;
 }
 
@@ -100,10 +95,3 @@ nav a:hover {
   gap: 10px;
   overflow-y: scroll;
 }
-
-
-
-
-
-
-
