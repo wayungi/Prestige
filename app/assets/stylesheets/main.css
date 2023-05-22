@@ -14,70 +14,31 @@ main.wrapper {
   height:100vh;
 }
 
-p.notice {
+div.notice {
   grid-column: 1 / -1;
-  outline:5px solid rgb(230, 9, 9);
+}
+
+section.menu {
+  grid-column: 1 / span 2;
+}
+
+section.content {
+  grid-column: 3 / -1;
+  border-left: 1px solid #ccc;
 
 }
 
-section.content-wrapper {
-  grid-column: 1 / -1;
-  outline:5px solid black;
-}
 
-main > section {
-  display:flex;
-  width:100vw;
-  height:100%;
-}
 
 /* main > section {
   display:flex;
-} */
-
-/* .wrapper {
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "notice"
-    "navigation";
-  /* outline: 1px solid green; 
-  
-}; */
-
-/* partion the grid */
-/* .notice {
-  grid-area: notice;
-}
-
-.menu {
-  grid-area: navigation;
-}
-
-.content {
-  grid-area: vehicles;
-}
-
- */
-
-/* .card {
-  border:2px solid blue;
-  width:fit-content;
-} */
-
-/* .vehicle-link {
-  border: 3px solid salmon;
-  display:inline-block;
+  width:100vw;
+  height:100%;
 } */
 
 
-/* ======= */
 
 
-/*** styling from left to right & top to bottom ***/
-
-/* == The notice == */
 
 /* == The navigation == */
 nav {
@@ -112,7 +73,7 @@ nav a:hover {
 .content {
   display: flex;
   flex-direction:column;
-  outline: 4px solid red;
+  /* outline: 4px solid red; */
 }
 
 .content > div.swiper {

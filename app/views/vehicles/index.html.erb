@@ -1,17 +1,15 @@
 <main class="wrapper">
-  <p class="notice">
+  <div class="notice">
     <%# !<%= notice %> 
-    HEADER MARKER TEXT
-  </p>
+      <h1>Latest models</h1>
+  </div>
 
 
-  <section class="content-wrapper"> 
     <section class="menu">
         <%= render "partials/nav" %>
     </section> 
 
     <section class="content">
-      <h1>Latest models</h1>
       <div class="swiper"><!-- Slider main container -->
         <div class="swiper-wrapper"><!-- Additional required wrapper -->
           <% @vehicles.each do |vehicle| %>
@@ -23,5 +21,4 @@
         <div class="swiper-button-next"></div>
       </div>
     </section>
-  </section>
 </main>
