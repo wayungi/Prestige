@@ -66,8 +66,16 @@ nav a:hover {
   height: 80%;
 }
 
-.swiper-slide {
-  outline: 1px solid blue;
+.swiper-slide .vehicle-link {
+  display:flex;
+  justify-content: center;
+  text-decoration: none;
+  color:black;
+  outline:1px solid black;
+}
+
+.vehicle-link .vehicle-detail{
+  text-align: center;
 }
 
 #customize-controls {
@@ -86,10 +94,6 @@ nav a:hover {
   overflow-y: scroll;
 }
 
-.swiper-slide .vehicle-link {
-  text-decoration: none;
-  color:black;
-}
 
 
 
