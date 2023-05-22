@@ -5,16 +5,47 @@
   padding: 0;
   border: none;
   background: none;
+  font-family: 'Poppins', sans-serif;
 }
 
-.notice {
-  grid-area: header;
+main.wrapper {
+  display: grid;
+  grid-template: 80px auto / repeat(12, 1fr);
+  height: 100vh;
 }
 
+div.notice {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.menu {
+  grid-column: 1 / span 2;
+}
+
+section.content {
+  grid-column: 3 / -1;
+  border-left: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  padding: 0  20px;
+}
+
+/* == The navigation == */
 nav {
-  grid-area: navigation;
   display: flex;
   flex-direction: column;
+}
+
+nav ul {
+  margin-top: 40px;
+}
+
+nav li {
+  border-bottom: 1px solid grey;
+  text-align: center;
 }
 
 nav a {
@@ -25,33 +56,32 @@ nav a {
   font-weight: 200;
 }
 
-nav ul li a:hover {
+nav a:hover {
   background-color: grey;
   color: white;
 }
 
-.vehicle-link,
-.vehicles h1,
-nav ul li {
-  font-family: 'Poppins', sans-serif;
+/* == The image display section == */
+
+.content > div.swiper {
+  display: flex;
+  width: 100%;
+  height: 80%;
 }
 
-nav ul li {
-  border-bottom: 1px solid grey;
+.swiper-slide .vehicle-link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+
+.vehicle-link .vehicle-detail {
   text-align: center;
 }
 
-nav ul {
-  margin-top: 40px;
-}
-
-.vehicles {
-  grid-area: vehicles;
+#customize-controls {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-left: 1px solid #ccc;
-  height: 100vh;
 }
 
 .vehicles h1 {
@@ -64,24 +94,4 @@ nav ul {
   width: 90%;
   gap: 10px;
   overflow-y: scroll;
-}
-
-div .vehicle-detail {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: black;
-}
-
-.vehicle-link {
-  text-decoration: none;
-}
-
-main {
-  display: grid;
-  grid-template-columns: 2fr 6fr 2fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header header header"
-    "nav vehicles vehicles";
 }

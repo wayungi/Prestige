@@ -1,7 +1,7 @@
-<article>
+<article class="swiper-slide">
   <%= link_to vehicle, class: "vehicle-link"  do %>
-    <div id="<%= dom_id vehicle %>">
-      <div>
+    <div id="<%= dom_id vehicle %>" class="card">
+      <div class="mark">
         <%= image_tag(vehicle.image, class: 'vehicle-image', alt: 'My Image') %> 
       </div>
       <div class="vehicle-detail">
