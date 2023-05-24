@@ -1,14 +1,13 @@
 <main class="show-page">
   <p style="color: green"><%= notice %></p>
+  
+  <section class="menu">
+      <%= render "partials/nav" %>
+  </section>
 
-  <div>
-    <div>
-        <%= render "partials/nav" %>
-    </div>
-
-    <div>
-      <%= image_tag @vehicle.image, class: 'vehicle-image', alt: 'My Image' %> 
-    </div>
+  <section class="">
+    <%= image_tag @vehicle.image, class: 'vehicle-image', alt: 'My Image' %> 
+  </section>
 
     <div>
       <p>
@@ -53,5 +52,4 @@
         <% end %>
       </div> 
     </div>
-  </div>
 </main>
