@@ -1,10 +1,14 @@
-<p style="color: green"><%= notice %></p>
+<main class="wrapper">
+  <div class="notice">
+    <%= notice %> 
+    <h1>Reserve vehicle</h1>
+  </div>
 
-<h1>Reserve vehicle</h1>
-<div>
-    <%= render "partials/nav" %>
-</div>
+  <section class="menu">
+      <%= render "partials/nav" %>
+  </section> 
 
-<div id="vehicles">
-  <%= render partial: "vehicles/reserve", locals: { user: @user } %> 
-</div>
+  <section class="content">
+    <%= render partial: "vehicles/reserve", locals: { user: @user } %> 
+  </section>
+</main>
