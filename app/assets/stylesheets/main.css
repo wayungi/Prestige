@@ -104,10 +104,27 @@ main.show-page {
   grid-template: 500px / repeat(12, 1fr);
 }
 
+.middle-section, .details-pad {
+  display:flex;
+  padding-top: 80px;
+}
+
 .middle-section {
   grid-column: 3 / span 7;
+  justify-content: center;
 }
 
 .details-pad {
   grid-column: 10 / -1;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 60px;
+}
+
+.right-align {
+  text-align:right;
+}
+
+.right-align p {
+  font-size: x-small;
 }

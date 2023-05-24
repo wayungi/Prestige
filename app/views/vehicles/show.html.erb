@@ -6,11 +6,12 @@
     <%= image_tag @vehicle.image, class: 'vehicle-image', alt: 'My Image' %> 
   </section>
   <section class="details-pad">
-    <article>
-      <p>
-      <%= @vehicle.name%></br>
-      <%= @vehicle.desc %>
-      </p>
+    <article class="details">
+      <div class="right-align">
+        <h2><%= @vehicle.name%></h2>
+        <p>- <%= @vehicle.desc %></p>
+      </div>
+      
       <p>
       <span>drive fee</span>
       <%= @vehicle.drive_fee%>
@@ -39,9 +40,9 @@
 
 
     <div>
-      <%= link_to "Edit this vehicle", edit_vehicle_path(@vehicle) %> |
-      <%= link_to "Back to vehicles", vehicles_path %>
-      <%= button_to "Destroy this vehicle", @vehicle, method: :delete %>
+      <%= link_to "Edit", edit_vehicle_path(@vehicle) %> |
+      <%= link_to "Vehicles", vehicles_path %>
+      <%= button_to "Delete", @vehicle, method: :delete %>
 
       <div>
         <%= form_tag reserve_vehicle_path(@vehicle), method: :post do %>
