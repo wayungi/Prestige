@@ -12,10 +12,6 @@ main {
   height: 100vh;
 }
 
-main.show-page {
-  grid-template: 100% / repeat(12, 1fr);
-}
-
 main.wrapper {
   grid-template: 80px auto / repeat(12, 1fr);
 }
@@ -100,4 +96,18 @@ nav a:hover {
   width: 90%;
   gap: 10px;
   overflow-y: scroll;
+}
+
+/* details page */
+
+main.show-page {
+  grid-template: 500px / repeat(12, 1fr);
+}
+
+.middle-section {
+  grid-column: 3 / span 7;
+}
+
+.details-pad {
+  grid-column: 10 / -1;
 }

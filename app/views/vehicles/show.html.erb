@@ -1,15 +1,12 @@
 <main class="show-page">
-  <p style="color: green"><%= notice %></p>
-  
   <section class="menu">
       <%= render "partials/nav" %>
   </section>
-
-  <section class="">
+  <section class="middle-section">
     <%= image_tag @vehicle.image, class: 'vehicle-image', alt: 'My Image' %> 
   </section>
-
-    <div>
+  <section class="details-pad">
+    <article>
       <p>
       <%= @vehicle.name%></br>
       <%= @vehicle.desc %>
@@ -38,7 +35,7 @@
         <span>Duration</span>
         <span><%= (@vehicle.purchase_fee - 0.2*@vehicle.purchase_fee)/(0.05*@vehicle.purchase_fee) %> months<span>
       </p>
-    </div>
+    </article>
 
 
     <div>
@@ -52,4 +49,5 @@
         <% end %>
       </div> 
     </div>
+  </section>
 </main>
