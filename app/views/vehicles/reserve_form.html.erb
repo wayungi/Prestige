@@ -4,9 +4,10 @@
     <h1>Reserve vehicle</h1>
   </div>
 
-  <div>
+  <section class="menu">
       <%= render "partials/nav" %>
-  </div>
+  </section> 
+
   <div id="vehicles">
     <%= render partial: "vehicles/reserve", locals: { user: @user } %> 
   </div>
