@@ -7,11 +7,17 @@
   background: none;
   font-family: 'Poppins', sans-serif;
 }
+main {
+  display: grid;
+  height: 100vh;
+}
+
+main.show-page {
+  grid-template: 100% / repeat(12, 1fr);
+}
 
 main.wrapper {
-  display: grid;
   grid-template: 80px auto / repeat(12, 1fr);
-  height: 100vh;
 }
 
 div.notice {
