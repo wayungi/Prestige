@@ -143,3 +143,9 @@ main.show-page {
   background-color: #ccc;
 }
 
+.control-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
