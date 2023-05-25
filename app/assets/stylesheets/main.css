@@ -149,3 +149,8 @@ main.show-page {
   justify-content: space-between;
   margin-top: 40px;
 }
+
+.control-group .link {
+  text-decoration: none;
+  padding: 8px;
+}
