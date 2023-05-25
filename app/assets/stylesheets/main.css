@@ -7,6 +7,7 @@
   background: none;
   font-family: 'Poppins', sans-serif;
 }
+
 main {
   display: grid;
   height: 100vh;
@@ -103,8 +104,9 @@ main.show-page {
   grid-template: 500px / repeat(12, 1fr);
 }
 
-.middle-section, .details-pad {
-  display:flex;
+.middle-section,
+.details-pad {
+  display: flex;
   padding-top: 80px;
 }
 
@@ -120,7 +122,7 @@ main.show-page {
 }
 
 .right-align {
-  text-align:right;
+  text-align: right;
 }
 
 .right-align p {
@@ -129,11 +131,11 @@ main.show-page {
 
 .details > ul {
   list-style: none;
-  width:100%;
+  width: 100%;
 }
 
 .details > ul > li {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   padding: 10px 20px;
 }
@@ -156,25 +158,30 @@ main.show-page {
 
 .control {
   border-radius: 2px;
-  color:white;
+  color: white;
   font-weight: bold;
   cursor: pointer;
 }
 
+.delete,
+.reserve {
+  padding: 10px;
+}
+
 .control-group .edit {
-  background-color:rgb(0, 0, 255, 0.7);
+  background-color: rgb(0, 0, 255, 0.7);
 }
 
 .control-group .edit:hover {
-  background-color:rgb(0, 0, 255);
+  background-color: rgb(0, 0, 255);
 }
 
 .control-group .vehicles {
-  background-color:rgba(203, 150, 15, 0.7);
+  background-color: rgba(203, 150, 15, 0.7);
 }
 
 .control-group .vehicles:hover {
-  background-color:rgb(203, 150, 15);
+  background-color: rgb(203, 150, 15);
 }
 
 .control-group .delete {
@@ -184,6 +191,7 @@ main.show-page {
 .control-group .delete:hover {
   background-color: rgb(255, 0, 0);
 }
+
 .control-group .reserve {
   background-color: rgba(0, 255, 0, 0.7);
 }
@@ -192,10 +200,7 @@ main.show-page {
   background-color: rgb(0, 255, 0);
 }
 
-.delete, .reserve {
-  padding: 10px;
-}
-
-section.content, section.middle-section {
+section.content,
+section.middle-section {
   border-left: 1px solid #ccc;
 }
