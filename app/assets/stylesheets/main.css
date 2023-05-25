@@ -154,3 +154,10 @@ main.show-page {
   text-decoration: none;
   padding: 8px;
 }
+
+.control {
+  border-radius: 2px;
+  color:white;
+  font-weight: bold;
+  cursor: pointer;
+}
