@@ -11,31 +11,33 @@
         <h2><%= @vehicle.name%></h2>
         <p>- <%= @vehicle.desc %></p>
       </div>
-      
-      <p>
-      <span>drive fee</span>
-      <%= @vehicle.drive_fee%>
-      </p>
 
-      <p>
-        <span>Purchase fee</span>
-        <%= @vehicle.purchase_fee %>
-      </p>
+      <ul>
+        <li>
+        <span>drive fee</span>
+        <%= @vehicle.drive_fee%>
+        </li>
 
-      <p>
-      <span>Initial deposit</span>
-      <%= 0.2*@vehicle.purchase_fee %>
-      </p>
+        <li>
+          <span>Purchase fee</span>
+          <%= @vehicle.purchase_fee %>
+        </li>
 
-      <p>
-      <span>Monthly installments</span>
-      <%= 0.05*@vehicle.purchase_fee %>
-      </p>
+        <li>
+        <span>Initial deposit</span>
+        <%= 0.2*@vehicle.purchase_fee %>
+        </li>
 
-      <p>
-        <span>Duration</span>
-        <span><%= (@vehicle.purchase_fee - 0.2*@vehicle.purchase_fee)/(0.05*@vehicle.purchase_fee) %> months<span>
-      </p>
+        <li>
+        <span>Monthly installments</span>
+        <%= 0.05*@vehicle.purchase_fee %>
+        </li>
+
+        <li>
+          <span>Duration</span>
+          <span><%= (@vehicle.purchase_fee - 0.2*@vehicle.purchase_fee)/(0.05*@vehicle.purchase_fee) %> months<span>
+        </li>
+      </ul>
     </article>
 
 
