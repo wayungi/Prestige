@@ -29,7 +29,6 @@ section.menu {
 
 section.content {
   grid-column: 3 / -1;
-  border-left: 1px solid #ccc;
   display: flex;
   align-items: center;
   padding: 0  20px;
@@ -168,7 +167,6 @@ main.show-page {
 
 .control-group .edit:hover {
   background-color:rgb(0, 0, 255);
-
 }
 
 .control-group .vehicles {
@@ -196,4 +194,8 @@ main.show-page {
 
 .delete, .reserve {
   padding: 10px;
+}
+
+section.content, section.middle-section {
+  border-left: 1px solid #ccc;
 }
