@@ -193,3 +193,7 @@ main.show-page {
 .control-group .reserve:hover {
   background-color: rgb(0, 255, 0);
 }
+
+.delete, .reserve {
+  padding: 10px;
+}
