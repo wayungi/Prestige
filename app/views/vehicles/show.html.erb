@@ -1,55 +1,56 @@
-<p style="color: green"><%= notice %></p>
-
-<div>
-  <div>
+<main class="show-page">
+  <section class="menu">
       <%= render "partials/nav" %>
-  </div>
-
-  <div>
+  </section>
+  <section class="middle-section">
     <%= image_tag @vehicle.image, class: 'vehicle-image', alt: 'My Image' %> 
-  </div>
+  </section>
+  <section class="details-pad">
+    <article class="details">
+      <div class="right-align">
+        <h2><%= @vehicle.name%></h2>
+        <p>- <%= @vehicle.desc %></p>
+      </div>
 
-  <div>
-    <p>
-    <%= @vehicle.name%></br>
-    <%= @vehicle.desc %>
-    </p>
-    <p>
-    <span>drive fee</span>
-    <%= @vehicle.drive_fee%>
-    </p>
+      <ul>
+        <li>
+        <span>drive fee</span>
+        <%= @vehicle.drive_fee%>
+        </li>
 
-    <p>
-      <span>Purchase fee</span>
-      <%= @vehicle.purchase_fee %>
-    </p>
+        <li>
+          <span>Purchase fee</span>
+          <%= @vehicle.purchase_fee %>
+        </li>
 
-    <p>
-    <span>Initial deposit</span>
-    <%= 0.2*@vehicle.purchase_fee %>
-    </p>
+        <li>
+        <span>Initial deposit</span>
+        <%= 0.2*@vehicle.purchase_fee %>
+        </li>
 
-    <p>
-    <span>Monthly installments</span>
-    <%= 0.05*@vehicle.purchase_fee %>
-    </p>
+        <li>
+        <span>Monthly installments</span>
+        <%= 0.05*@vehicle.purchase_fee %>
+        </li>
 
-    <p>
-      <span>Duration</span>
-      <span><%= (@vehicle.purchase_fee - 0.2*@vehicle.purchase_fee)/(0.05*@vehicle.purchase_fee) %> months<span>
-    </p>
-  </div>
+        <li>
+          <span>Duration</span>
+          <span><%= (@vehicle.purchase_fee - 0.2*@vehicle.purchase_fee)/(0.05*@vehicle.purchase_fee) %> months<span>
+        </li>
+      </ul>
+    </article>
 
 
-  <div>
-    <%= link_to "Edit this vehicle", edit_vehicle_path(@vehicle) %> |
-    <%= link_to "Back to vehicles", vehicles_path %>
-    <%= button_to "Destroy this vehicle", @vehicle, method: :delete %>
+    <div class="control-group">
+      <%= link_to "Edit", edit_vehicle_path(@vehicle), class: "control link edit" %> 
+      <%= link_to "Vehicles", vehicles_path, class: "control link vehicles" %>
+      <%= button_to "Delete", @vehicle, method: :delete, class: "control delete" %>
 
-    <div>
-      <%= form_tag reserve_vehicle_path(@vehicle), method: :post do %>
-        <%= submit_tag 'Reserve' %>
-      <% end %>
-    </div> 
-  </div>
-</div>
+      <div>
+        <%= form_tag reserve_vehicle_path(@vehicle), method: :post do %>
+          <%= submit_tag 'Reserve', class: "control reserve" %>
+        <% end %>
+      </div> 
+    </div>
+  </section>
+</main>
