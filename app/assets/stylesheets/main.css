@@ -136,6 +136,10 @@ main.show-page {
   outline: 1px solid black;
 }
 
-
+.details > ul > li {
+  display:flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
 
 
