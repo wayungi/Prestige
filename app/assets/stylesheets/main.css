@@ -44,12 +44,12 @@ nav ul {
   margin-top: 40px;
 }
 
-nav li {
+nav li, .vehicles {
   border-bottom: 1px solid grey;
   text-align: center;
 }
 
-nav a {
+nav a, .vehicles a {
   text-decoration: none;
   color: black;
   display: block;
@@ -57,7 +57,7 @@ nav a {
   font-weight: 200;
 }
 
-nav a:hover {
+nav a:hover, .vehicles a:hover {
   background-color: grey;
   color: white;
 }
