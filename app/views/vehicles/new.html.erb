@@ -1,9 +1,13 @@
-<h1>New vehicle</h1>
-
-<%= render "form", vehicle: @vehicle %>
-
-<br>
-
-<div>
-  <%= link_to "Back to vehicles", vehicles_path %>
-</div>
+<main class="wrapper">
+  <div class="notice">
+    <%= notice %> 
+    <h1>Add vehicle</h1>
+  </div>
+  <section class="menu">
+    <%= render "partials/nav" %>
+    <div><%= link_to "Back to vehicles", vehicles_path %></div>
+  </section> 
+  <section class="content">
+   <%= render "form", vehicle: @vehicle %>
+  </section>
+</main>
