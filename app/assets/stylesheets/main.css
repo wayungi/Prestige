@@ -206,8 +206,9 @@ section.middle-section {
 
 /* Add vehicle form */
 .form-add-vehicle {
-  outline: 3px solid brown;
-  margin: 1px auto;
+  width:80%;
+  background-color: rgba(204,204,204, .2);
+  margin: 15px auto 30px auto;
   padding:20px;
   border-radius:5px;
 }
