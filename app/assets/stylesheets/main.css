@@ -44,12 +44,14 @@ nav ul {
   margin-top: 40px;
 }
 
-nav li, .vehicles {
+nav li,
+.vehicles {
   border-bottom: 1px solid grey;
   text-align: center;
 }
 
-nav a, .vehicles a {
+nav a,
+.vehicles a {
   text-decoration: none;
   color: black;
   display: block;
@@ -57,7 +59,8 @@ nav a, .vehicles a {
   font-weight: 200;
 }
 
-nav a:hover, .vehicles a:hover {
+nav a:hover,
+.vehicles a:hover {
   background-color: grey;
   color: white;
 }
@@ -155,7 +158,8 @@ main.show-page {
   padding: 8px;
 }
 
-.control, #submit {
+.control,
+#submit {
   border-radius: 2px;
   color: white;
   font-weight: bold;
@@ -163,7 +167,8 @@ main.show-page {
 }
 
 .delete,
-.reserve, #submit {
+.reserve,
+#submit {
   padding: 10px;
 }
 
@@ -191,11 +196,13 @@ main.show-page {
   background-color: rgb(255, 0, 0);
 }
 
-.control-group .reserve, #submit {
+.control-group .reserve,
+#submit {
   background-color: rgba(0, 255, 0, 0.7);
 }
 
-.control-group .reserve:hover, #submit:hover {
+.control-group .reserve:hover,
+#submit:hover {
   background-color: rgb(0, 255, 0);
 }
 
@@ -206,25 +213,25 @@ section.middle-section {
 
 /* Add vehicle form */
 .form-add-vehicle {
-  width:80%;
-  background-color: rgba(204,204,204, .2);
+  width: 80%;
+  background-color: rgba(204, 204, 204, 0.2);
   margin: 15px auto 30px auto;
-  padding:50px;
-  border-radius:5px;
+  padding: 50px;
+  border-radius: 5px;
 }
 
 .form-add-vehicle > div {
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
 .input {
-  border-bottom:1px solid #ccc;
-  width:60%;
-  height:30px;
-  padding-left:20px;
-  color:rgb(32, 31, 31);
+  border-bottom: 1px solid #ccc;
+  width: 60%;
+  height: 30px;
+  padding-left: 20px;
+  color: rgb(32, 31, 31);
 }
 
 .input:focus {
-  outline:none;
+  outline: none;
 }
