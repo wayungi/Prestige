@@ -31,7 +31,6 @@ section.menu {
 section.content {
   grid-column: 3 / -1;
   display: flex;
-  align-items: center;
   padding: 0  20px;
 }
 
