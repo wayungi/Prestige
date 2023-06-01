@@ -204,3 +204,11 @@ section.content,
 section.middle-section {
   border-left: 1px solid #ccc;
 }
+
+/* Add vehicle form */
+.form-add-vehicle {
+  outline: 3px solid brown;
+  margin: 1px auto;
+  padding:20px;
+  border-radius:5px;
+}
