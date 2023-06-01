@@ -155,7 +155,7 @@ main.show-page {
   padding: 8px;
 }
 
-.control {
+.control, #submit {
   border-radius: 2px;
   color: white;
   font-weight: bold;
@@ -163,7 +163,7 @@ main.show-page {
 }
 
 .delete,
-.reserve {
+.reserve, #submit {
   padding: 10px;
 }
 
@@ -191,11 +191,11 @@ main.show-page {
   background-color: rgb(255, 0, 0);
 }
 
-.control-group .reserve {
+.control-group .reserve, #submit {
   background-color: rgba(0, 255, 0, 0.7);
 }
 
-.control-group .reserve:hover {
+.control-group .reserve:hover, #submit:hover {
   background-color: rgb(0, 255, 0);
 }
 
@@ -209,6 +209,22 @@ section.middle-section {
   width:80%;
   background-color: rgba(204,204,204, .2);
   margin: 15px auto 30px auto;
-  padding:20px;
+  padding:50px;
   border-radius:5px;
+}
+
+.form-add-vehicle > div {
+  margin-bottom:20px;
+}
+
+.input {
+  border-bottom:1px solid #ccc;
+  width:60%;
+  height:30px;
+  padding-left:20px;
+  color:rgb(32, 31, 31);
+}
+
+.input:focus {
+  outline:none;
 }
