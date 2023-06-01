@@ -1,4 +1,4 @@
-<%= form_with(model: vehicle) do |form| %>
+<%= form_with(model: vehicle, html: { class: "form-add-vehicle" }) do |form| %>
   <% if vehicle.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(vehicle.errors.count, "error") %> prohibited this vehicle from being saved:</h2>
@@ -13,7 +13,7 @@
 
   <div>
     <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, class: "input"%>
   </div>
 
   <div>
@@ -22,15 +22,20 @@
 
   <div>
     <%= form.label :drive_fee, style: "display: block" %>
-    <%= form.text_field :drive_fee %>
+    <%= form.text_field :drive_fee, class: "input" %>
+  </div>
+
+  <div>
+    <%= form.label :hire_fee, style: "display: block" %>
+    <%= form.text_field :hire_fee, class: "input" %>
   </div>
 
   <div>
     <%= form.label :purchase_fee, style: "display: block" %>
-    <%= form.text_field :purchase_fee %>
+    <%= form.text_field :purchase_fee, class: "input" %>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.submit "Add vehicle", id: "submit" %>
   </div>
 <% end %>
