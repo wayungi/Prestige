@@ -138,6 +138,7 @@ You can deploy this project using: <a href="https://www.youtube.com/watch?v=QJ4B
 - [ ] **Vehicle payment module**
 - [ ] **Vehicle maintance module**
 - [ ] **intergration with mobile money payment platform**
+- [ ] **Uploading mutliple vehicle images**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
