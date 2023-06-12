@@ -8,6 +8,8 @@
       <%= render "partials/nav" %>
   </section> 
 
+  <%= @vehicle.name %>
+  
   <section class="content">
     <%= render partial: "vehicles/reserve", locals: { user: @user } %> 
   </section>

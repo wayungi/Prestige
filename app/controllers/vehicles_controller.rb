@@ -1,5 +1,5 @@
 class VehiclesController < ApplicationController
-  before_action :set_vehicle, only: %i[show edit update destroy]
+  before_action :set_vehicle, only: %i[show edit update destroy reserve_form ]
 
   # GET /vehicles or /vehicles.json
   def index
@@ -23,9 +23,9 @@ class VehiclesController < ApplicationController
   end
 
   # GET /vehicles/reserve_form
-  def reserve_form
-    @user = User.find(1) # ! this will need to be deleted and user added dynamically
-  end
+  def reserve_form;end
+  #   @user = User.find(1) # ! this will need to be deleted and user added dynamically
+  # end
 
   # GET /vehicles/delete/candidates
   def candidates
