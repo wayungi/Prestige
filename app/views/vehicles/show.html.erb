@@ -45,7 +45,7 @@
       <%= link_to "Edit", edit_vehicle_path(@vehicle), class: "control link edit" %> 
       <%= link_to "Vehicles", vehicles_path, class: "control link vehicles" %>
       <%= button_to "Delete", @vehicle, method: :delete, class: "control delete" %>
-      <%# <%= link_to "Reserve", %>
+      <%= link_to "Reserve", vehicles_reserve_form_path(id: @vehicle.id), class: "control link reserve" %>
 
       <%# <div>
         <%= form_tag reserve_vehicle_path(@vehicle), method: :post do 

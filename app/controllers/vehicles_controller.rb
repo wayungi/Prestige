@@ -24,7 +24,6 @@ class VehiclesController < ApplicationController
 
   # GET /vehicles/reserve_form
   def reserve_form
-    puts 'reserve form'
     @user = User.find(1) # ! this will need to be deleted and user added dynamically
   end
 
