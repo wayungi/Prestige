@@ -18,14 +18,15 @@ class VehiclesController < ApplicationController
   # POST vehicles/1/reserve/
   def reserve
     @user = User.find(1) # ! change this to get the current user
-    Theme.create(user_id: @user.id, vehicle_id: params[:vehicle_id], book_date: params[:date], name: params[:vehicle_id], city: params[:city])
+    Theme.create(user_id: @user.id, vehicle_id: params[:vehicle_id], book_date: params[:date],
+                 name: params[:vehicle_id], city: params[:city])
   end
 
   # GET /vehicles/reserve_form
   def reserve_form
-    if params[:id].present? 
-      @vehicle = Vehicle.find(params[:id])
-    end
+    return unless params[:id].present?
+
+    @vehicle = Vehicle.find(params[:id])
   end
 
   # GET /vehicles/delete/candidates
