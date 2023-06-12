@@ -17,9 +17,8 @@ class VehiclesController < ApplicationController
 
   # POST vehicles/1/reserve/
   def reserve
-    @vehicle = Vehicle.find(params[:id])
     @user = User.find(1) # ! change this to get the current user
-    Theme.create(user_id: @user.id, vehicle_id: @vehicle.id, book_date: Date.today, name: @vehicle.name)
+    Theme.create(user_id: @user.id, vehicle_id: params[:vehicle_id], book_date: params[:date], name: params[:vehicle_id], city: params[:city])
   end
 
   # GET /vehicles/reserve_form
