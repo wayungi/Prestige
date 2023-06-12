@@ -1,5 +1,5 @@
 class VehiclesController < ApplicationController
-  before_action :set_vehicle, only: %i[show edit update destroy reserve_form ]
+  before_action :set_vehicle, only: %i[show edit update destroy]
 
   # GET /vehicles or /vehicles.json
   def index
@@ -22,7 +22,11 @@ class VehiclesController < ApplicationController
   end
 
   # GET /vehicles/reserve_form
-  def reserve_form;end
+  def reserve_form
+    if params[:id].present? 
+      @vehicle = Vehicle.find(params[:id])
+    end
+  end
 
   # GET /vehicles/delete/candidates
   def candidates
